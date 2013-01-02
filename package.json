@@ -1,0 +1,14 @@
+{
+    "name": "YouAreDaBomb",
+    "description": "AOP library for JavaScript. Inspired by http://github.com/raganwald/YouAreDaChef.",
+    "main": "./lib/YouAreDaBomb",
+    "author": "Jan Filipowski",
+    "version": "0.0.1",
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/gameboxed/YouAreDaBomb"
+    },
+    "dependencies": {
+        "underscore": ">=1.4.0"
+    }
+}
