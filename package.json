@@ -1,14 +1,32 @@
 {
-    "name": "YouAreDaBomb",
-    "description": "AOP library for JavaScript. Inspired by http://github.com/raganwald/YouAreDaChef.",
-    "main": "./lib/YouAreDaBomb",
-    "author": "Jan Filipowski",
-    "version": "0.0.1",
-    "repository" : {
-        "type" : "git",
-        "url" : "https://github.com/gameboxed/YouAreDaBomb"
-    },
-    "dependencies": {
-        "underscore": ">=1.4.0"
-    }
+  "name": "YouAreDaBomb",
+  "description": "AOP library for JavaScript. Inspired by https://github.com/raganwald/YouAreDaChef.",
+  "main": "index.js",
+  "author": "Jan Filipowski",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gameboxed/YouAreDaBomb"
+  },
+  "scripts": {
+    "eslint": "eslint .",
+    "prettier": "prettier --write \"**/*.{js,md,json}\"",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "underscore": "1.13.6"
+  },
+  "devDependencies": {
+    "eslint": "8.42.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-n": "16.0.0",
+    "eslint-plugin-promise": "6.1.1",
+    "husky": "8.0.2",
+    "lint-staged": "13.0.4",
+    "prettier": "2.8.8"
+  },
+  "lint-staged": {
+    "*.{js,md,json}": "prettier --write \"**/*.{js,md,json}\""
+  }
 }
